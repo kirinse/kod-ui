@@ -7,6 +7,6 @@ angular,
 requiejs
 
 
-
+## [参数项目](https://github.com/DaftMonk/generator-angular-fullstack)
 
 
