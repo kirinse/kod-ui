@@ -52,9 +52,8 @@
       <change type="DELETED" beforePath="C:\kod-ui\test\.jshintrc" afterPath="" />
       <change type="DELETED" beforePath="C:\kod-ui\test\karma.conf.js" afterPath="" />
       <change type="DELETED" beforePath="C:\kod-ui\test\spec\controllers\main.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kod-ui.iml" afterPath="$PROJECT_DIR$/.idea/kod-ui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/server/routes.js" afterPath="$PROJECT_DIR$/webapp/server/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/server/config/socketio.js" afterPath="$PROJECT_DIR$/webapp/server/config/socketio.js" />
     </list>
     <ignored path="kod-ui.iws" />
     <ignored path=".idea/workspace.xml" />
