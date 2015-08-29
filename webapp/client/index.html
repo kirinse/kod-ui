@@ -1,27 +1,41 @@
 <!doctype html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="app/app.css">
-  <base href="/">
-  </head>
-  <body ng-app="angularWebappApp">
- <img src="assets/images/KOD001.jpg" class="bg-img" alt=""/>
+    <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="app/app.css">
+    <base href="/">
+</head>
+<body ng-app="angularWebappApp">
+<img src="assets/images/KOD001.jpg" class="bg-img" alt=""/>
 
+<div class="bg"></div>
 <div ui-view="" class="container">
+
+    <header>
+        <div class="logo"><h1>KOD</h1><span>Dream place to start</span></div>
+        <div class="fr-box">
+            <ul>
+                <li><i class="cir"></i> <a href="#">vic.wang</a></li>
+                <li><i></i> <a href="#">Game</a></li>
+                <li><i></i> <a href="#">Proxy investment</a></li>
+                <li><i></i> <a href="#">Help center</a></li>
+                <li><i></i> <a href="#">About us</a></li>
+            </ul>
+        </div>
+    </header>
 </div>
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
-   <script src="app/app.js"></script>
-  </body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="app/app.js"></script>
+</body>
 </html>
