@@ -1,12 +1,11 @@
-# kod-ui
+#项目相关信息
 
-鐩稿叧璇存槑
+##1.前端页面存放位置和入口
 
-鎵�鐢ㄦ妧鏈細
-angular,
-requiejs
+**(1)页面存放位置:webapp/client **
+其它的一律无视
+**(2)入口webapp/client/index.html **
+**(3)js入口webapp/client/app/app.js ** 
 
-
-## [鍙傝�冮」鐩甝(https://github.com/DaftMonk/generator-angular-fullstack)
-
-
+##2.apache 配置
+[Apache](https://github.com/richardgong1987/OpenSource/blob/master/java/apache/README.md)
