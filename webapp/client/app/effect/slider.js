@@ -9,7 +9,6 @@ slider.prototype= {
     constructor:slider,
     moves:function(){},
     moveLeft: function(){},
-    moveRight:function(){
-
-    }
+    moveRight:function(){}
 }
+
