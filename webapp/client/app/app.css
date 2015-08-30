@@ -2,9 +2,11 @@ body, html {
     height: 100%;
     width: 100%;
 }
+
 body {
     font-family: aaa;
 }
+
 a, span, b, strong, i {
     display: inline-block;
 
@@ -23,7 +25,7 @@ a, span, b, strong, i {
 
 .bg-img {
     position: fixed;
-width: 100%;
+    width: 100%;
     height: 100%;
     top: 0;
     right: 0;
@@ -50,7 +52,7 @@ width: 100%;
 
 header {
     position: relative;
-    margin:0px 40px 0px 23px;
+    margin: 0px 40px 0px 23px;
 }
 
 .logo {
@@ -61,7 +63,7 @@ header {
 .logo h1 {
     margin: 0px;
     font-weight: normal;
-    font-family:aaa;
+    font-family: aaa;
     color: #c2735c;
     font-size: 1.8em;
     padding-right: 15px;
@@ -112,60 +114,144 @@ header {
     font-size: 1em;
     display: inline;
 }
+
+/*底部圆*/
+.cir-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #000000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    height: 40px;
+
+}
+
 /*进度条*/
-.step{ position: absolute; bottom: 0px;}
-.step-container{
+.step {
+    position: absolute;
+    bottom: 0px;
+}
+
+.step-container {
     font-family: arial;
     display: inline-block;
     position: relative;
-    color: #1e5374;
 
 }
-.step-sm{
 
-    width:700px;
+.step-sm {
+
+    width: 700px;
     height: 30px;
     font-size: 14px;
     line-height: 1;
 }
+
 .step-container ul {
     list-style: none;
+
 }
+
 .step-container ul, .step-container li, .step-container p {
     margin: 0;
     padding: 0;
+
 }
+
+.step-orange li, .step-orange p {
+    color: #c27252;
+}
+
+.step-purple li, .step-purple p {
+
+    color: #a453ad;
+
+}
+
+.step-lightBlue li, .step-lightBlue p {
+
+    color: #3a98d5;
+
+}
+
+.step-Blue li, .step-Blue p {
+
+    color: #5c53ad;
+}
+
 .step-sm .step-container-steps {
     position: absolute;
     top: 2px;
     cursor: pointer;
     z-index: 10;
 }
+
 .step-sm li {
     float: left;
     width: 140px;
     height: 50px;
-  position: relative;
+    position: relative;
     text-align: center;
 }
-.step-sm li i{    border:1px solid #3a98d5;  width: 12px;
+
+.step-sm li i {
+    width: 12px;
     height: 12px;
     border-radius: 50%;
-position: absolute;
-    top:27px;
+    position: absolute;
+    top: 27px;
     left: 62px;
 
 }
-.step-sm .steps-active {
-background: #3a98d5;
 
+.step-orange li i {
+
+    border: 1px solid #c27252;
+}
+
+.step-purple li i {
+
+    border: 1px solid #a453ad;
 
 }
+
+.step-lightBlue li i {
+
+    border: 1px solid #3a98d5;
+}
+
+.step-Blue li i {
+
+    border: 1px solid #5c53ad;
+}
+
+.step-orange .steps-active {
+    background: #c27252;
+
+}
+
+.step-purple .steps-active {
+    background: #a453ad;
+
+}
+
+.step-lightBlue .steps-active {
+
+    background: #3a98d5;
+}
+
+.step-Blue .steps-active {
+
+    background: #5c53ad;
+}
+
 .step-sm .steps-done {
-  background: #000000;
+    background: #000000;
 
 }
-.step-progress{
+
+.step-sm .step-progress {
 
     width: 550px;
     height: 3px;
@@ -174,23 +260,79 @@ background: #3a98d5;
     left: 73px;
     float: left;
     margin-right: 10px;
-    background: #3a98d5;
+
     overflow: hidden;
 
 }
-.step-progress .step-progress-bar{
+
+.step-orange .step-progress {
+    background: #c27252;
+
+}
+
+.step-purple .step-progress {
+    background: #a453ad;
+}
+
+.step-lightBlue .step-progress {
+
+    background: #3a98d5;
+}
+
+.step-Blue .step-progress {
+
+    background: #5c53ad;
+}
+
+.step-sm .step-progress .step-progress-bar {
 
     width: 270px;
     height: 6px;
-    background:#3a98d5;
+
     display: inline-block;
     float: left;
 }
+
+.step-orange .step-progress .step-progress-bar {
+    background: #c27252;
+}
+
+.step-purple .step-progress .step-progress-bar {
+
+    background: #a453ad;
+
+}
+
+.step-lightBlue .step-progress .step-progress-bar {
+
+    background: #3a98d5;
+}
+
+.step-Blue .step-progress .step-progress-bar {
+
+    background: #5c53ad;
+}
+
 .step-sm .step-progress-highlight {
     height: 6px;
     display: block;
 }
-.step-green .step-progress-highlight {
+
+.step-orange .step-progress-highlight {
+    background: #c27252;
+}
+
+.step-purple .step-progress-highlight {
+
+    background: #a453ad;
+}
+
+.step-lightBlue .step-progress-highlight {
+
     background: #3a98d5;
 }
-/*sport样式*/
+
+.step-Blue .step-progress-highlight {
+
+    background: #5c53ad;
+}

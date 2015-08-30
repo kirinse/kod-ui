@@ -8,29 +8,137 @@
     <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="app/app.css">
     <link rel="stylesheet" href="assets/font/font.css"/>
-    <base href="/">
 </head>
 <body ng-app="angularWebappApp">
-<img src="assets/images/KOD001.jpg" class="bg-img" alt=""/>
+<img src="assets/images/KOD001.jpg" class="bg-img" style="display: none" alt=""/>
+<img src="assets/images/KOD002.jpg" class="bg-img" alt=""/>
+<img src="assets/images/KOD003.jpg" class="bg-img" alt=""/>
+<img src="assets/images/KOD004.jpg" class="bg-img" alt=""/>
+<img src="assets/images/KOD005.jpg" class="bg-img" alt=""/>
+
 
 <div class="bg"></div>
 
 
-    <header>
-        <div class="logo"><h1>KOD</h1><span>Dream place to start</span></div>
-        <div class="fr-box">
-            <ul>
-                <li><i class="cir"><img src="assets/images/head.png" alt=""/></i> <a href="#">vic.wang</a></li>
-                <li><i></i> <a href="#">Game</a></li>
-                <li><i></i> <a href="#">Proxy investment</a></li>
-                <li><i></i> <a href="#">Help center</a></li>
-                <li><i></i> <a href="#">About us</a></li>
-            </ul>
-        </div>
-    </header>
+<header>
+    <div class="logo"><h1>KOD</h1><span>Dream place to start</span></div>
+    <div class="fr-box">
+        <ul>
+            <li><i class="cir"><img src="assets/images/head.png" alt=""/></i> <a href="#">vic.wang</a></li>
+            <li><i></i> <a href="#">Game</a></li>
+            <li><i></i> <a href="#">Proxy investment</a></li>
+            <li><i></i> <a href="#">Help center</a></li>
+            <li><i></i> <a href="#">About us</a></li>
+        </ul>
+    </div>
+</header>
 <div ui-view="" class="container">
 </div>
 
+<!--进度条容器-->
+<div class="step">
+    <!--第一个-->
+    <div class="step-container step-sm step-orange" style="display: none;">
+
+        <ul class="step-container-steps">
+
+            <li><i class="steps-active"></i>Home</a></li>
+            <li><i class="steps-done"></i>Live Casino</li>
+            <li><i class="steps-done"></i>Slot machine</li>
+            <li><i class="steps-done"></i>Sports</li>
+            <li><i class="steps-done"></i>Lottery</li>
+        </ul>
+        <div class="step-progress">
+            <p class="step-progress-bar">
+                <span class="step-progress-highlight"></span>
+
+            </p>
+
+
+        </div>
+    </div>
+    <!--第二个-->
+    <div class="step-container step-sm step-purple" style="display:none;">
+
+        <ul class="step-container-steps">
+
+            <li><i class="steps-done"></i>Home</a></li>
+            <li><i class="steps-active"></i>Live Casino</li>
+            <li><i class="steps-done"></i>Slot machine</li>
+            <li><i class="steps-done"></i>Sports</li>
+            <li><i class="steps-done"></i>Lottery</li>
+        </ul>
+        <div class="step-progress">
+            <p class="step-progress-bar">
+                <span class="step-progress-highlight"></span>
+
+            </p>
+
+
+        </div>
+    </div>
+
+    <!--第三个-->
+    <div class="step-container step-sm step-purple" style="display:none;">
+
+        <ul class="step-container-steps">
+
+            <li><i class="steps-done"></i>Home</a></li>
+            <li><i class="steps-done"></i>Live Casino</li>
+            <li><i class="steps-active"></i>Slot machine</li>
+            <li><i class="steps-done"></i>Sports</li>
+            <li><i class="steps-done"></i>Lottery</li>
+        </ul>
+        <div class="step-progress">
+            <p class="step-progress-bar">
+                <span class="step-progress-highlight"></span>
+
+            </p>
+
+
+        </div>
+    </div>
+    <!--第四个-->
+    <div class="step-container step-sm step-lightBlue" style="display:none;">
+
+        <ul class="step-container-steps">
+
+            <li><i class="steps-done"></i>Home</a></li>
+            <li><i class="steps-done"></i>Live Casino</li>
+            <li><i class="steps-done"></i>Slot machine</li>
+            <li><i class="steps-active"></i>Sports</li>
+            <li><i class="steps-done"></i>Lottery</li>
+        </ul>
+        <div class="step-progress">
+            <p class="step-progress-bar">
+                <span class="step-progress-highlight"></span>
+
+            </p>
+
+
+        </div>
+    </div>
+    <!--第五个-->
+    <div class="step-container step-sm step-Blue" style="display:;">
+
+        <ul class="step-container-steps">
+
+            <li><i class="steps-done"></i>Home</a></li>
+            <li><i class="steps-done"></i>Live Casino</li>
+            <li><i class="steps-done"></i>Slot machine</li>
+            <li><i class="steps-done"></i>Sports</li>
+            <li><i class="steps-active"></i>Lottery</li>
+        </ul>
+        <div class="step-progress">
+            <p class="step-progress-bar">
+                <span class="step-progress-highlight"></span>
+
+            </p>
+
+
+        </div>
+    </div>
+</div>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
