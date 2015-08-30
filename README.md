@@ -2,7 +2,7 @@
 ##项目源码获取.
 本项目主要用bower进行依赖管理.
 
-###1.获取源码开发环境步骤:
+####.获取源码开发环境步骤:
 * 1. clone仓库代码
 ```
 git clone https://github.com/kirinse/kod-ui
@@ -14,8 +14,8 @@ git clone https://github.com/kirinse/kod-ui
 bower install
 ```
 
-即可.
-
+即可
+.
 **tip:**
 安装nodejs,yeoman,bower方式:敬请使用百度,谷歌
 
