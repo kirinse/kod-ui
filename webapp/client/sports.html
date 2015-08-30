@@ -10,23 +10,51 @@
     <base href="/">
 </head>
 <body ng-app="angularWebappApp">
-<img src="assets/images/KOD001.jpg" class="bg-img" alt=""/>
+<img src="assets/images/KOD004.jpg" class="bg-img" alt=""/>
 
 <div class="bg"></div>
+
+
+<header>
+    <div class="logo"><h1>KOD</h1><span>Dream place to start</span></div>
+    <div class="fr-box">
+        <ul>
+            <li><i class="cir"><img src="assets/images/head.png" alt=""/></i> <a href="#">vic.wang</a></li>
+            <li><i></i> <a href="#">Game</a></li>
+            <li><i></i> <a href="#">Proxy investment</a></li>
+            <li><i></i> <a href="#">Help center</a></li>
+            <li><i></i> <a href="#">About us</a></li>
+        </ul>
+    </div>
+</header>
 <div ui-view="" class="container">
 
-    <header>
-        <div class="logo"><h1>KOD</h1><span>Dream place to start</span></div>
-        <div class="fr-box">
-            <ul>
-                <li><i class="cir"></i> <a href="#">vic.wang</a></li>
-                <li><i></i> <a href="#">Game</a></li>
-                <li><i></i> <a href="#">Proxy investment</a></li>
-                <li><i></i> <a href="#">Help center</a></li>
-                <li><i></i> <a href="#">About us</a></li>
-            </ul>
-        </div>
-    </header>
+
+    <!--进度条容器-->
+    <div class="step">
+<div class="step-container step-sm step-green">
+
+    <ul class="step-container-steps">
+
+        <li> <i class="steps-done"></i>Home</li>
+        <li> <i class="steps-active"></i>Live Casino</li>
+        <li> <i class="steps-done"></i>Slot machine</li>
+        <li> <i class="steps-done"></i>Sports</li>
+        <li><i class="steps-done"></i>Lottery</li>
+    </ul>
+   <div class="step-progress">
+       <p class="step-progress-bar">
+           <span class="step-progress-highlight"></span>
+
+       </p>
+
+
+   </div>
+</div>
+
+    </div>
+
+
 </div>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>

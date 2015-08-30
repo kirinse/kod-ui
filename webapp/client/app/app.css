@@ -3,7 +3,7 @@ body, html {
     width: 100%;
 }
 body {
-    font-family: 'GOTHIC';
+    font-family: aaa;
 }
 a, span, b, strong, i {
     display: inline-block;
@@ -23,6 +23,8 @@ a, span, b, strong, i {
 
 .bg-img {
     position: fixed;
+width: 100%;
+    height: 100%;
     top: 0;
     right: 0;
     left: 0;
@@ -38,10 +40,12 @@ a, span, b, strong, i {
 .bg {
     background: #000000;
     display: inline-block;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 53px;
     opacity: 0.2;
+    left: 0;
+    right: 0;
 }
 
 header {
@@ -57,7 +61,7 @@ header {
 .logo h1 {
     margin: 0px;
     font-weight: normal;
-    font-family: GOTHIC;
+    font-family:aaa;
     color: #c2735c;
     font-size: 1.8em;
     padding-right: 15px;
@@ -108,3 +112,85 @@ header {
     font-size: 1em;
     display: inline;
 }
+/*进度条*/
+.step{ position: absolute; bottom: 0px;}
+.step-container{
+    font-family: arial;
+    display: inline-block;
+    position: relative;
+    color: #1e5374;
+
+}
+.step-sm{
+
+    width:700px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 1;
+}
+.step-container ul {
+    list-style: none;
+}
+.step-container ul, .step-container li, .step-container p {
+    margin: 0;
+    padding: 0;
+}
+.step-sm .step-container-steps {
+    position: absolute;
+    top: 2px;
+    cursor: pointer;
+    z-index: 10;
+}
+.step-sm li {
+    float: left;
+    width: 140px;
+    height: 50px;
+  position: relative;
+    text-align: center;
+}
+.step-sm li i{    border:1px solid #3a98d5;  width: 12px;
+    height: 12px;
+    border-radius: 50%;
+position: absolute;
+    top:27px;
+    left: 62px;
+
+}
+.step-sm .steps-active {
+background: #3a98d5;
+
+
+}
+.step-sm .steps-done {
+  background: #000000;
+
+}
+.step-progress{
+
+    width: 550px;
+    height: 3px;
+    position: absolute;
+    top: 34px;
+    left: 73px;
+    float: left;
+    margin-right: 10px;
+    background: #3a98d5;
+    overflow: hidden;
+
+}
+.step-progress .step-progress-bar{
+
+    width: 270px;
+    height: 6px;
+    background:#3a98d5;
+    display: inline-block;
+    float: left;
+}
+.step-sm .step-progress-highlight {
+    height: 6px;
+    display: block;
+}
+.step-green .step-progress-highlight {
+    background: #3a98d5;
+}
+/*sport样式*/
