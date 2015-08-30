@@ -225,7 +225,10 @@ header {
 
     border: 1px solid #5c53ad;
 }
+.step-sm .steps-done {
+    background: #000000;
 
+}
 .step-orange .steps-active {
     background: #c27252;
 
@@ -246,10 +249,7 @@ header {
     background: #5c53ad;
 }
 
-.step-sm .steps-done {
-    background: #000000;
 
-}
 
 .step-sm .step-progress {
 
