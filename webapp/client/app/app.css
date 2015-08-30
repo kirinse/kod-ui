@@ -2,7 +2,9 @@ body, html {
     height: 100%;
     width: 100%;
 }
-
+body {
+    font-family: 'GOTHIC';
+}
 a, span, b, strong, i {
     display: inline-block;
 
@@ -10,10 +12,9 @@ a, span, b, strong, i {
 
 @font-face {
     font-family: GOTHIC ;
-    font-family: GOTHICB;
-    font-family: GOTHICBI;
-    font-family: GOTHICI;
+
     src: url('../assets/font/GOTHIC.TTF');
+
     src: url('../assets/font/GOTHICB.TTF');
     src: url('../assets/font/GOTHICBI.TTF');
     src: url('../assets/font/GOTHICI.TTF');
@@ -45,6 +46,7 @@ a, span, b, strong, i {
 
 header {
     position: relative;
+    margin:0px 40px 0px 23px;
 }
 
 .logo {
@@ -55,7 +57,7 @@ header {
 .logo h1 {
     margin: 0px;
     font-weight: normal;
-    font-family: Myriad Pro;
+    font-family: GOTHIC;
     color: #c2735c;
     font-size: 1.8em;
     padding-right: 15px;
@@ -72,7 +74,7 @@ header {
     float: right;
     height: 53px;
     line-height: 53px;
-    width: 490px;
+    width: 566px;
     overflow: hidden;
 }
 
@@ -80,7 +82,7 @@ header {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    width: 518px;
+    width: 598px;
 }
 
 .fr-box ul li {
@@ -94,10 +96,11 @@ header {
 }
 
 .fr-box ul li .cir {
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     border-radius: 50%;
-    border: 1px solid red;
+
+    line-height: 20px;
 }
 
 .fr-box ul li a {
