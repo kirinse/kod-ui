@@ -38,3 +38,16 @@ function bgSlider(index) {
     $("#bg-box img").eq(index).css("opacity", "1");
 
 }
+$(window).resize(function() {
+    resetCircleStyle();
+
+});
+resetCircleStyle();
+
+function resetCircleStyle(){
+    var widthPage = $(window).width();
+    widthPage *=3.5;
+    $(".wheel").css({"width":widthPage,"height":widthPage,"margin-left":-widthPage/2});
+
+}
+
