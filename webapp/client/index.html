@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="assets/font/font.css"/>
 </head>
 <body>
-<img src="assets/images/KOD001.jpg" class="bg-img" style="display: none" alt=""/>
-<img src="assets/images/KOD002.jpg" class="bg-img" alt=""/>
-<img src="assets/images/KOD003.jpg" class="bg-img" alt=""/>
-<img src="assets/images/KOD004.jpg" class="bg-img" alt=""/>
-<img src="assets/images/KOD005.jpg" class="bg-img" alt=""/>
-
+<div id="bg-box">
+    <img src="assets/images/KOD001.jpg" class="bg-img" style="display: block;" alt=""/>
+    <img src="assets/images/KOD002.jpg" class="bg-img" alt=""/>
+    <img src="assets/images/KOD003.jpg" class="bg-img" alt=""/>
+    <img src="assets/images/KOD004.jpg" class="bg-img" alt=""/>
+    <img src="assets/images/KOD005.jpg" class="bg-img" alt=""/>
+</div>
 
 <div class="bg"></div>
 
@@ -38,7 +39,7 @@
 <!--进度条容器-->
 <div class="step">
     <!--第一个-->
-    <div class="step-container step-sm step-orange" >
+    <div class="step-container step-sm step-orange">
 
         <ul class="step-container-steps">
 
@@ -59,6 +60,17 @@
     </div>
 
 </div>
+<!--圆-->
+<div id="wheel" class="wheel">
+    <div class="list1">1</div>
+    <div class="list2">2</div>
+    <div class="list3">3</div>
+    <div class="list4">4</div>
+    <div class="list5">5</div>
+
+</div>
+
+
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
