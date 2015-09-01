@@ -370,17 +370,11 @@ header {
 
     position: relative;
     display: block;
-    width: 4000px;
-    height: 4000px;
     border-radius: 50%;
     background: #000000;
     margin: 0 auto;
-   top:50%;
+    top:65%;
     left:50%;
-    margin-top:30px;
-    margin-left: -2000px;
-
-
 }
 
 .wheel div {
