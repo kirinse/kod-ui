@@ -383,11 +383,10 @@ header {
     font-weight: bold;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: -5%;
     left: 50%;
     margin-left: -150px;
-    width: 300px;
-    height: 300px;
+
     -moz-transform-origin: center bottom;
     -webkit-transform-origin: center bottom;
     -o-transform-origin: center bottom;
@@ -396,3 +395,4 @@ header {
     list-style: none;
 
 }
+.wheel .list1{background: url("../assets/images/pic1.png") no-repeat; width: 1165px; height: 276px; top:-206px; margin-left:-586px;}
