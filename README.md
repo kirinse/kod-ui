@@ -35,3 +35,8 @@ bower install
 
 ##css3相关技术交流
 [css3](https://github.com/richardgong1987/OpenSource/blob/master/javascript/css3/README.md)
+
+##canvas相关技术demo
+[随机算法加三角函数 demo](https://github.com/richardgong1987/OpenSource/tree/master/javascript/canvas)
+
+[重力加速度demo](https://github.com/richardgong1987/OpenSource/tree/master/javascript/canvas)
