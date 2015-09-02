@@ -46,7 +46,7 @@ resetCircleStyle();
 
 function resetCircleStyle(){
     var widthPage = $(window).width();
-    widthPage *=3.5;
+    widthPage *=5;
     $(".wheel").css({"width":widthPage,"height":widthPage,"margin-left":-widthPage/2});
 
 }
