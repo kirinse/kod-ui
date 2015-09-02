@@ -15,6 +15,7 @@ step.prototype.bindEvent = function () {
     this.container.find('.item').click(function (e) {
         self.itemHander.call(this, e, self);
         /* self.slider(s);*/
+
     });
 }
 step.prototype.itemHander = function (e, context) {
@@ -25,6 +26,7 @@ step.prototype.itemHander = function (e, context) {
 
     $(this).find("i").addClass(" steps-active");
     bgSlider(i);
+    wheelRostate(i);
 
 }
 
@@ -49,5 +51,26 @@ function resetCircleStyle(){
     widthPage *=5;
     $(".wheel").css({"width":widthPage,"height":widthPage,"margin-left":-widthPage/2});
 
+
+    var items = $('#wheel').find('.items');
+    var pn =items.length
+    var pa = 360 / pn;
+    //三角函数:sin(Q) = a/c;
+    //1弧度=PI/180;
+    //于是就有:
+    var windowWith = widthPage/2;
+    var li_width = Math.sin(Math.PI/180 * pa/2) * windowWith;
+    //勾股定理 c*c  = a*a + b*b;
+    //于是就有
+    var li_height = Math.sqrt(Math.abs(windowWith*windowWith-li_width*li_width));
+    items.css({'width':li_width*2,'margin-left':-li_width,'height':li_height,'margin-top':-li_height});
+    for (var i = 0; i < pn; i++) {
+        items.eq(i).css('transform', 'rotate(' + pa * i + 'deg)');
+    }
+
+}
+
+function wheelRostate(i){
+   $('.wheel').rotate(i*72);
 }
 

@@ -181,7 +181,11 @@ header {
 .step-container ul, .step-container li, .step-container p {
     margin: 0;
     padding: 0;
-
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .step-orange li, .step-orange p {
@@ -277,7 +281,11 @@ header {
 }
 
 .step-sm .step-progress {
-
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
     width: 550px;
     height: 3px;
     position: absolute;
@@ -364,7 +372,6 @@ z-index: 2;
 
 /*圆*/
 .wheel {
-
     position: relative;
     display: block;
     border-radius: 50%;
@@ -372,15 +379,30 @@ z-index: 2;
     margin: 0 auto;
     top:65%;
     left:50%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
-
-.wheel div {
-    text-align: center;
-
+/*.wheel .items:nth-child(1){
+    background: red !important;
+}
+.wheel .items:nth-child(2){
+    background: green !important;
+}
+.wheel .items:nth-child(3){
+    background: blue !important;
+}
+.wheel .items:nth-child(4){
+    background: #ffff00 !important;
+}.wheel .items:nth-child(5){
+     background: gray !important;
+ }*/
+.wheel .items{
     position: absolute;
-
-    margin-left: -150px;
-
+    left: 50%;
+    top: 50%;
     -moz-transform-origin: center bottom;
     -webkit-transform-origin: center bottom;
     -o-transform-origin: center bottom;
@@ -389,6 +411,14 @@ z-index: 2;
     list-style: none;
 
 }
-.wheel .list1{background: url("../assets/images/pic1.png") no-repeat; width: 1165px; height: 276px; top:-223px; margin-left:-586px;
-    left: 50%; }
-.wheel .list2{ background: url("../assets/images/pic2.png") no-repeat; width: 616px; height: 223px; top: -212px; margin-left: -303px; left: 50%;  }
+.wheel .list1{background: url("../assets/images/pic1.png") no-repeat; width: 1165px; height: 276px;  }
+.wheel .list2{ background: url("../assets/images/pic2.png") no-repeat; width: 616px; height: 223px; }
+.wheel .items .section-block{position: absolute;
+    left: 0;
+    right: 0; bottom: 120%;
+    text-align: center;
+}
+.wheel .items .section-block .spot-view{
+    display: inline-block;
+    font-size: 30px;
+}
