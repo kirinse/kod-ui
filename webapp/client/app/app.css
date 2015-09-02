@@ -181,7 +181,11 @@ header {
 .step-container ul, .step-container li, .step-container p {
     margin: 0;
     padding: 0;
-
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .step-orange li, .step-orange p {
@@ -277,7 +281,11 @@ header {
 }
 
 .step-sm .step-progress {
-
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
     width: 550px;
     height: 3px;
     position: absolute;
@@ -364,7 +372,6 @@ z-index: 2;
 
 /*圆*/
 .wheel {
-
     position: relative;
     display: block;
     border-radius: 50%;
@@ -372,15 +379,23 @@ z-index: 2;
     margin: 0 auto;
     top:65%;
     left:50%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.wheel .items .section-block{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
-.wheel div {
-    text-align: center;
-
+.wheel .items{
     position: absolute;
-
-    margin-left: -150px;
-
+    left: 50%;
+    top: 50%;
     -moz-transform-origin: center bottom;
     -webkit-transform-origin: center bottom;
     -o-transform-origin: center bottom;
@@ -389,6 +404,16 @@ z-index: 2;
     list-style: none;
 
 }
-.wheel .list1{background: url("../assets/images/pic1.png") no-repeat; width: 1165px; height: 276px; top:-223px; margin-left:-586px;
-    left: 50%; }
-.wheel .list2{ background: url("../assets/images/pic2.png") no-repeat; width: 616px; height: 223px; top: -212px; margin-left: -303px; left: 50%;  }
+.wheel .bot1{bottom: 122%;}
+.wheel .bot2{ bottom: 123%;}
+
+.wheel .items .section-block .spot-view{
+    display: inline-block;
+
+}
+.wheel .list1{background: url("../assets/images/pic1.png") no-repeat; width: 1165px; height: 276px;  }
+.wheel .list2{ background: url("../assets/images/pic2.png") no-repeat; width: 616px; height: 223px; }
+
+.wheel .list3{ background: url("../assets/images/pic3_bg2.png") no-repeat; width: 343px; height:211px; }
+.wheel .list4{ background: url("../assets/images/pic4.png") no-repeat;width: 849px; height: 239px; }
+.wheel .list5{ background: url("../assets/images/pic4.png") no-repeat;width: 849px; height: 239px; }
