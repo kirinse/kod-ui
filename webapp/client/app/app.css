@@ -390,6 +390,7 @@ z-index: 2;
     left: 0;
     right: 0;
     text-align: center;
+    bottom: 123%;
 }
 
 .wheel .items{
@@ -404,16 +405,55 @@ z-index: 2;
     list-style: none;
 
 }
-.wheel .bot1{bottom: 122%;}
-.wheel .bot2{ bottom: 123%;}
+
 
 .wheel .items .section-block .spot-view{
     display: inline-block;
-
+  position: relative;
+    min-width: 1208px;
+    height: 40px;
 }
-.wheel .list1{background: url("../assets/images/pic1.png") no-repeat; width: 1165px; height: 276px;  }
-.wheel .list2{ background: url("../assets/images/pic2.png") no-repeat; width: 616px; height: 223px; }
+.wheel .items .section-block .spot-view img{ position: absolute; }
 
-.wheel .list3{ background: url("../assets/images/pic3_bg2.png") no-repeat; width: 343px; height:211px; }
-.wheel .list4{ background: url("../assets/images/pic4.png") no-repeat;width: 849px; height: 239px; }
-.wheel .list5{ background: url("../assets/images/pic4.png") no-repeat;width: 849px; height: 239px; }
+.wheel .list2 .list01{ bottom:-75%; left: 24%; }
+.wheel .list2 .list02{ bottom:15%; left:39%; z-index: 9;}
+.wheel .list2 .list03{right:24%; bottom:-174%;}
+
+.wheel .list2 .bright_bg{ position: relative; bottom:20%; width: 100%; height: 100%; z-index: 1;}
+.wheel .list2 .bright_bg .bg_1{ bottom:218%; left: 47%;}
+.wheel .list2 .bright_bg .rotate1{  transform: rotate(36deg);
+    -webkit-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    left: 58%;
+    bottom: 210%;}
+.wheel .list2 .bright_bg .rotate2{  transform: rotate(58deg);
+    -webkit-transform: rotate(58deg);
+    -o-transform: rotate(58deg);
+    -ms-transform: rotate(58deg);
+    -ms-transform: rotate(58deg);
+    left: 60%;
+    bottom: 40%;}
+.wheel .list2 .bright_bg .rotate3{
+    bottom: 161%;
+    left: 38%;
+    transform: rotate(-41deg);
+    -webkit-transform: rotate(-41deg);
+    -o-transform: rotate(-41deg);
+    -ms-transform: rotate(-41deg);
+    -ms-transform: rotate(-41deg);
+}
+.wheel .list2 .bright_bg .rotate4{bottom: 27%;
+    left: 35%;
+    transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+}
+.wheel .list2 .bright_bg .bird1{  right: 43%;
+    bottom: 763%;
+}
+.wheel .list2 .bright_bg .bird2{  right: 30%;
+    bottom: 500%;}
