@@ -109,7 +109,7 @@ header {
     float: right;
     height: 53px;
     line-height: 53px;
-    width: 568px;
+    width: 633px;
     margin-right: 40px;
     overflow: hidden;
 }
@@ -118,7 +118,7 @@ header {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    width: 598px;
+    width: 661px;
 }
 
 .fr-box ul li {
@@ -129,6 +129,7 @@ header {
 .fr-box ul li i {
     vertical-align: middle;
     margin-right: 5px;
+    color: #c1725b; cursor: pointer;
 }
 
 .fr-box ul li .cir {
@@ -416,10 +417,22 @@ header {
     -ms-border-radius:27px;
     -moz-border-radius:27px;
     text-decoration: none;
-    background-color: none;
+
 }
 .title a:hover{ opacity: 1; transition: opacity 0.3s;}
 .title .a1{ background: url("../assets/images/M.png") no-repeat center;}
+.title .a2{ background: url("../assets/images/play.png") no-repeat center;}
+.title .a3{ background: url("../assets/images/AG.png") no-repeat center;}
+.t2 a{
+    height: 70px;
+
+    border-radius: 36px;
+    -webkit-border-radius: 36px;
+    -o-border-radius:36px;
+    -ms-border-radius:36px;
+    -moz-border-radius:36px;
+    margin-right: 25px;
+}
 /*圆*/
 .wheel {
     position: relative;
@@ -670,7 +683,7 @@ header {
 }
 
 .wheel .list4 .list01 {
-    bottom: 30%;
+    bottom: -71%;
     left: 25%;
 }
 
