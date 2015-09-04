@@ -27,6 +27,7 @@ step.prototype.itemHander = function (e, context) {
     $(this).find("i").addClass(" steps-active");
     bgSlider(i);
     wheelRostate(i);
+    chooseTitle(i);
 
 }
 
@@ -38,6 +39,11 @@ instanceStep.init();
 function bgSlider(index) {
     $("#bg-box img").css({'opacity': 0})
     $("#bg-box img").eq(index).css("opacity", "1");
+
+}
+function  chooseTitle(index2){
+$(".title").css("display","none");
+    $(".title").eq(index2).css("display","block");
 
 }
 $(window).resize(function() {
