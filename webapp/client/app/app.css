@@ -44,12 +44,12 @@ a, span, b, strong, i {
 #bg-box, .bg {
     position: fixed;
     width: 100%;
-    height: 53px;
+
 
     left: 0;
     right: 0;
 }
-
+.bg{  height: 53px;}
 .bg {
     background: #000000;
     opacity: 0.2;
@@ -76,7 +76,8 @@ header {
     /* Opera */
     -o-transition: opacity 0.5s linear 0.5s;
 }
-
+#bg-box .img1{ width: 100%;
+    height: 100%; opacity: 1;}
 .logo {
     float: left;
     color: #c2735c;
@@ -510,25 +511,82 @@ header {
 }
 
 .wheel .list1 .bright_bg .rotate1 {
-    left: 38%;
-    bottom: 199%;
+    left: 39%;
+    bottom: 214%;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+    animation:mymove3 3s infinite;
+}
+@keyframes mymove3
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(-152deg);}
 }
 
+@-webkit-keyframes mymove3  /*Safari and Chrome*/
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(-152deg);}
+}
 .wheel .list1 .bright_bg .rotate2 {
-    left: 32%;
-    bottom: 169%;
+    left: 31%;
+    bottom: 170%;
+    transform-origin: right bottom;
+    transform: rotate(0deg);
+    animation:mymove4 3s infinite;
+}
+@keyframes mymove4
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(85deg);}
 }
 
+@-webkit-keyframes mymove4  /*Safari and Chrome*/
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(85deg);}
+}
 .wheel .list1 .bright_bg .rotate3 {
-    bottom: 165%;
-    right: 37%;
+    bottom: 211%;
+    right: 39%;
+    transform-origin: right bottom;
+    transform: rotate(0deg);
+    animation:mymove 5s infinite;
+    -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
+
+
+
+}
+@keyframes mymove
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(112deg);}
 }
 
+@-webkit-keyframes mymove  /*Safari and Chrome*/
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(112deg);}
+}
 .wheel .list1 .bright_bg .rotate4 {
-    right: 17%;
-    bottom: 175%;
+    right: 15%;
+    bottom: 217%;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+    animation:mymove2 5s infinite;
+    -webkit-animation:mymove2 5s infinite; /*Safari and Chrome*/
+}
+@keyframes mymove2
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(-132deg);}
 }
 
+@-webkit-keyframes mymove2  /*Safari and Chrome*/
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(-132deg);}
+}
 .wheel .list2 .list01 {
     bottom: -75%;
     left: 24%;
