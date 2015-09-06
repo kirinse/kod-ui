@@ -40,10 +40,7 @@ step.prototype.itemHander = function (e, context) {
     bgSlider(i);
     wheelRostate(i);
     chooseTitle(i);
-<<<<<<< HEAD
     aminate['inAimation'+i]();
-=======
->>>>>>> ccc76ea9d5a1b049028d0b0b8a00c3371611c140
 
 }
 
