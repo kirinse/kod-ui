@@ -44,12 +44,12 @@ a, span, b, strong, i {
 #bg-box, .bg {
     position: fixed;
     width: 100%;
-    height: 53px;
+
 
     left: 0;
     right: 0;
 }
-
+.bg{  height: 53px;}
 .bg {
     background: #000000;
     opacity: 0.2;
@@ -68,15 +68,16 @@ header {
     overflow: hidden;
     opacity: 0.1;
 
-    transition: opacity 1s linear 1s;
+    transition: opacity 0.5s linear 5.5s;
     /* Firefox 4 */
-    -moz-transition: opacity 1s linear 1s;
+    -moz-transition: opacity 0.5s linear 0.5s;
     /* Safari and Chrome */
-    -webkit-transition: opacity 1s linear 1s;
+    -webkit-transition: opacity 0.5s linear 0.5s;
     /* Opera */
-    -o-transition: opacity 1s linear 1s;
+    -o-transition: opacity 0.5s linear 0.5s;
 }
-
+#bg-box .img1{ width: 100%;
+    height: 100%; opacity: 1;}
 .logo {
     float: left;
     color: #c2735c;
@@ -92,6 +93,13 @@ header {
     height: 53px;
     line-height: 53px;
     float: left;
+    position: relative;
+}
+
+.logo h1 .king {
+    position: absolute;
+    top: 10%;
+    left: 23%;
 }
 
 .logo span {
@@ -102,7 +110,7 @@ header {
     float: right;
     height: 53px;
     line-height: 53px;
-    width: 568px;
+    width: 633px;
     margin-right: 40px;
     overflow: hidden;
 }
@@ -111,7 +119,7 @@ header {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    width: 598px;
+    width: 661px;
 }
 
 .fr-box ul li {
@@ -122,6 +130,7 @@ header {
 .fr-box ul li i {
     vertical-align: middle;
     margin-right: 5px;
+    color: #c1725b; cursor: pointer;
 }
 
 .fr-box ul li .cir {
@@ -154,7 +163,7 @@ header {
 .step {
     position: relative;
     text-align: center;
-    bottom: -80%;
+    bottom: -83%;
 
 }
 
@@ -370,14 +379,73 @@ header {
     background: #5c53ad;
 }
 
+/*标题*/
+.title {
+    position: relative;
+    text-align: center;
+   display: none;
+
+}
+
+.title h2 {
+    font-size: 53px;
+}
+
+.title .king2 {
+    position: absolute;
+    left: 50%;
+    top: -12%;
+}
+ .t2 .king2{ left:46.5%;}
+.title p {
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+}
+
+.title a {
+    margin-top: 20px;
+    opacity: 0.7;
+    font-size: 28px;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #ffffff;
+    border-radius: 27px;
+    -webkit-border-radius: 27px;
+    -o-border-radius:27px;
+    -ms-border-radius:27px;
+    -moz-border-radius:27px;
+    text-decoration: none;
+
+}
+.title a:hover{ opacity: 1; transition: opacity 0.3s;}
+.title .a1{ background: url("../assets/images/M.png") no-repeat center;}
+.title .a2{ background: url("../assets/images/play.png") no-repeat center;}
+.title .a3{ background: url("../assets/images/AG.png") no-repeat center;}
+.t2 a{
+    height: 70px;
+
+    border-radius: 36px;
+    -webkit-border-radius: 36px;
+    -o-border-radius:36px;
+    -ms-border-radius:36px;
+    -moz-border-radius:36px;
+    margin-right: 25px;
+}
 /*圆*/
 .wheel {
     position: relative;
     display: block;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius:50%;
+    -ms-border-radius:50%;
+    -moz-border-radius:50%;
     background: #000000;
     margin: 0 auto;
-    top: 65%;
+    top: 40%;
     left: 50%;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -443,27 +511,84 @@ header {
 }
 
 .wheel .list1 .bright_bg .rotate1 {
-    left: 38%;
-    bottom: 199%;
+    left: 39%;
+    bottom: 214%;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+    animation:mymove3 3s infinite;
+}
+@keyframes mymove3
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(-152deg);}
 }
 
+@-webkit-keyframes mymove3  /*Safari and Chrome*/
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(-152deg);}
+}
 .wheel .list1 .bright_bg .rotate2 {
-    left: 32%;
-    bottom: 169%;
+    left: 31%;
+    bottom: 170%;
+    transform-origin: right bottom;
+    transform: rotate(0deg);
+    animation:mymove4 3s infinite;
+}
+@keyframes mymove4
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(85deg);}
 }
 
+@-webkit-keyframes mymove4  /*Safari and Chrome*/
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(85deg);}
+}
 .wheel .list1 .bright_bg .rotate3 {
-    bottom: 165%;
-    right: 37%;
+    bottom: 211%;
+    right: 39%;
+    transform-origin: right bottom;
+    transform: rotate(0deg);
+    animation:mymove 5s infinite;
+    -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
+
+
+
+}
+@keyframes mymove
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(112deg);}
 }
 
+@-webkit-keyframes mymove  /*Safari and Chrome*/
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(112deg);}
+}
 .wheel .list1 .bright_bg .rotate4 {
-    right: 17%;
-    bottom: 175%;
+    right: 15%;
+    bottom: 217%;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+    animation:mymove2 5s infinite;
+    -webkit-animation:mymove2 5s infinite; /*Safari and Chrome*/
+}
+@keyframes mymove2
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(-132deg);}
 }
 
+@-webkit-keyframes mymove2  /*Safari and Chrome*/
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(-132deg);}
+}
 .wheel .list2 .list01 {
-    bottom: -75%;
+    bottom: -52%;
     left: 24%;
 }
 
@@ -475,9 +600,23 @@ header {
 
 .wheel .list2 .list03 {
     right: 24%;
-    bottom: -174%;
+    bottom: -133%;
 }
-
+.wheel .list2 .list04{left: 22%;
+    bottom:10%;
+background: url("../assets/images/tree01.gif") no-repeat;
+position: absolute;
+    width: 181px;
+    height: 175px;
+}
+.wheel .list2 .list05{
+    right: 31%;
+    bottom: -47%;
+    background: url("../assets/images/tree02.gif") no-repeat;
+    position: absolute;
+width: 105px;
+    height: 166px;
+}
 .wheel .list2 .bright_bg .bg_1 {
     bottom: 218%;
     left: 47%;
@@ -534,8 +673,8 @@ header {
 }
 
 .wheel .list2 .bright_bg .bird1 {
-    right: 43%;
-    bottom: 763%;
+    right: 41%;
+    bottom: 596%;
 }
 
 .wheel .list2 .bright_bg .bird2 {
@@ -616,7 +755,7 @@ header {
 }
 
 .wheel .list4 .list01 {
-    bottom: 30%;
+    bottom: -71%;
     left: 25%;
 }
 

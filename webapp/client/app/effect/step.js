@@ -18,6 +18,18 @@ step.prototype.bindEvent = function () {
 
     });
 }
+
+var aminate = {
+    inAimation0:function(){
+      console.log(000000000000000000000000000000000000)
+    },
+    inAimation1:function(){
+       $(".wheel .list2").append("<div class='list04'>"+"</div>"+"<div class='list05'>"+"</div>")
+    },
+    inAimation2:function(){},
+    inAimation3:function(){},
+    inAimation4:function(){}
+}
 step.prototype.itemHander = function (e, context) {
     var i = $(this).index();
     context.container.removeClass(context.classArr.join(' '));//转化字符串
@@ -27,6 +39,8 @@ step.prototype.itemHander = function (e, context) {
     $(this).find("i").addClass(" steps-active");
     bgSlider(i);
     wheelRostate(i);
+    chooseTitle(i);
+    aminate['inAimation'+i]();
 
 }
 
@@ -38,6 +52,11 @@ instanceStep.init();
 function bgSlider(index) {
     $("#bg-box img").css({'opacity': 0})
     $("#bg-box img").eq(index).css("opacity", "1");
+
+}
+function  chooseTitle(index2){
+$(".title").css("display","none");
+    $(".title").eq(index2).css("display","block");
 
 }
 $(window).resize(function() {
