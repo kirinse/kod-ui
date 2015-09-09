@@ -80,14 +80,19 @@ header {
     height: 100%; opacity: 1;}
 .logo {
     float: left;
-    color: #c2735c;
-}
 
+}
+.a1{
+
+    color:#c1725b;
+}
+.a2{color: #7163b2;}
+.a3{ color:#40a3e4;}
 .logo h1 {
     margin: 0px;
     font-weight: normal;
     font-family: aaa;
-    color: #c2735c;
+
     font-size: 1.8em;
     padding-right: 15px;
     height: 53px;
@@ -130,7 +135,7 @@ header {
 .fr-box ul li i {
     vertical-align: middle;
     margin-right: 5px;
-    color: #c1725b; cursor: pointer;
+   cursor: pointer;
 }
 
 .fr-box ul li .cir {
@@ -142,11 +147,13 @@ header {
 }
 
 .fr-box ul li a {
-    color: #c2735c;
+
     font-size: 1em;
     display: inline;
 }
-
+.box1 ul li i,.box1 ul li a{  color:#c1725b;}
+.box2 ul li i,.box2 ul li a{  color:#7163b2;}
+.box3 ul li i,.box3 ul li a{  color:#40a3e4;}
 /*底部圆*/
 .cir-container {
     position: absolute;
@@ -447,11 +454,11 @@ header {
     margin: 0 auto;
     top: 40%;
     left: 50%;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 5s;
+    -moz-transition: all 5s;
+    -ms-transition: all 5s;
+    -o-transition: all 5s;
+    transition: all 5s;
 }
 
 .wheel .items .section-block {
@@ -587,8 +594,22 @@ header {
     from { transform: rotate(0deg);}
     to { transform: rotate(-132deg);}
 }
+
+#birds-container2{position: relative;
+    bottom: 879%;
+    height: 418px;
+  }
+#birds-container2 img{
+
+    position: absolute;
+   right: 30%;
+    top:50%;
+
+}
+
+
 .wheel .list2 .list01 {
-    bottom: -75%;
+    bottom: -52%;
     left: 24%;
 }
 
@@ -600,7 +621,43 @@ header {
 
 .wheel .list2 .list03 {
     right: 24%;
-    bottom: -174%;
+    bottom: -133%;
+}
+.wheel .list2 .list04{left: 22%;
+    bottom:10%;
+background: url("../assets/images/tree01.png") no-repeat;
+position: absolute;
+    width: 181px;
+    height: 175px;
+    animation: tree 10s 1;
+-webkit-animation:tree 10s 1 ;
+
+
+}
+@keyframes tree
+{
+    0%   {height: 30px;}
+    25%  {height: 80px;}
+    50%  {height:130px;}
+    100% {height:175px;}
+}
+
+@-webkit-keyframes tree  /*Safari and Chrome*/
+{
+    0%   {height: 50px;}
+    25%  {height: 80px;}
+    50%  {height:130px;}
+    100% {height:175px;}
+}
+.wheel .list2 .list05{
+    right: 31%;
+    bottom: -47%;
+    background: url("../assets/images/tree02.png") no-repeat;
+    position: absolute;
+width: 105px;
+    height: 175px;
+    animation: tree 10s 1;
+    -webkit-animation:tree 10s 1 ;
 }
 
 .wheel .list2 .bright_bg .bg_1 {
@@ -648,17 +705,8 @@ header {
     -ms-transform: rotate(-65deg);
 }
 
-.wheel .list1 .bright_bg .bird1 {
-    right: 26%;
-    bottom: 351%;
-}
 
-.wheel .list1 .bright_bg .bird2 {
-    right: 40%;
-    bottom: 450%;
-}
-
-.wheel .list2 .bright_bg .bird1 {
+/*.wheel .list2 .bright_bg .bird1 {
     right: 41%;
     bottom: 596%;
 }
@@ -666,8 +714,23 @@ header {
 .wheel .list2 .bright_bg .bird2 {
     right: 30%;
     bottom: 500%;
-}
+}*/
 
+
+#birds-container3 {
+    position: relative;
+    height: 404px;
+
+    bottom: 1015%;
+
+}
+#birds-container3 img{
+    position: absolute;
+    left:26%;
+    top:50%;
+
+
+}
 .wheel .list3 .list01 {
     left: 12%;
     bottom: -110%;
@@ -707,12 +770,7 @@ header {
     right: 26%;
 }
 
-.wheel .list3 .bird_bg {
-    background: url("../assets/images/pic2_bird.png") no-repeat;
-    width: 48px;
-    height: 15px;
-    position: absolute;
-}
+
 
 .wheel .list3 .b1 {
     left: 41%;
@@ -739,14 +797,24 @@ header {
     right: 14%;
     bottom: 145%;
 }
+#birds-container4{
+    position: relative;
 
+    height: 390px;
+    bottom: 840%;
+
+
+}
 .wheel .list4 .list01 {
     bottom: -71%;
     left: 25%;
+    
+    transition: all 1.5s;
+
 }
 
 .wheel .list4 .list02 {
-    bottom: -7%;
+    bottom: -391%;
     left: 37%;
 }
 
@@ -759,3 +827,7 @@ header {
     left: 14%;
     bottom: -171%;
 }
+.wheel .list5 .list02{bottom: 10%;
+    left: 41%;}
+.bright-Box{ transition: all  0.5s;}
+
