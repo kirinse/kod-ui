@@ -625,6 +625,7 @@ header {
 }
 .wheel .list2 .list04{left: 22%;
     bottom:10%;
+<<<<<<< HEAD
 background: url("../assets/images/tree01.png") no-repeat;
 position: absolute;
     width: 181px;
@@ -648,18 +649,30 @@ position: absolute;
     25%  {height: 80px;}
     50%  {height:130px;}
     100% {height:175px;}
+=======
+background: url("../assets/images/tree01.gif") no-repeat;
+position: absolute;
+    width: 181px;
+    height: 175px;
+>>>>>>> 5b278f37031ff69113a398f6c580697c1063cecf
 }
 .wheel .list2 .list05{
     right: 31%;
     bottom: -47%;
+<<<<<<< HEAD
     background: url("../assets/images/tree02.png") no-repeat;
     position: absolute;
 width: 105px;
     height: 175px;
     animation: tree 10s 1;
     -webkit-animation:tree 10s 1 ;
+=======
+    background: url("../assets/images/tree02.gif") no-repeat;
+    position: absolute;
+width: 105px;
+    height: 166px;
+>>>>>>> 5b278f37031ff69113a398f6c580697c1063cecf
 }
-
 .wheel .list2 .bright_bg .bg_1 {
     bottom: 218%;
     left: 47%;

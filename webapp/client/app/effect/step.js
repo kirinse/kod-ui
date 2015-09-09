@@ -24,6 +24,7 @@ step.prototype.bindEvent = function () {
 }
 
 var aminate = {
+<<<<<<< HEAD
     inAimation0: function () {
         console.log(000000000000000000000000000000000000)
     },
@@ -92,6 +93,18 @@ var aminate = {
 
 
 //aaa
+=======
+    inAimation0:function(){
+      console.log(000000000000000000000000000000000000)
+    },
+    inAimation1:function(){
+       $(".wheel .list2").append("<div class='list04'>"+"</div>"+"<div class='list05'>"+"</div>")
+    },
+    inAimation2:function(){},
+    inAimation3:function(){},
+    inAimation4:function(){}
+}
+>>>>>>> 5b278f37031ff69113a398f6c580697c1063cecf
 step.prototype.itemHander = function (e, context) {
     context.index = $(this).index();
     context.detachBoundar(context.index).isSame && context.doAminate();
@@ -125,9 +138,14 @@ step.prototype.doAminate = function (iswheel) {
     bgSlider(i);
     wheelRostate(i);
     chooseTitle(i);
+<<<<<<< HEAD
     aminate['inAimation' + i]();
     this.changeStyle();
     colorBg(i);
+=======
+    aminate['inAimation'+i]();
+
+>>>>>>> 5b278f37031ff69113a398f6c580697c1063cecf
 }
 
 //aaa
