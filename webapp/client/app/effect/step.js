@@ -24,7 +24,6 @@ step.prototype.bindEvent = function () {
 }
 
 var aminate = {
-<<<<<<< HEAD
     inAimation0: function () {
         console.log(000000000000000000000000000000000000)
     },
@@ -93,18 +92,6 @@ var aminate = {
 
 
 //aaa
-=======
-    inAimation0:function(){
-      console.log(000000000000000000000000000000000000)
-    },
-    inAimation1:function(){
-       $(".wheel .list2").append("<div class='list04'>"+"</div>"+"<div class='list05'>"+"</div>")
-    },
-    inAimation2:function(){},
-    inAimation3:function(){},
-    inAimation4:function(){}
-}
->>>>>>> 5b278f37031ff69113a398f6c580697c1063cecf
 step.prototype.itemHander = function (e, context) {
     context.index = $(this).index();
     context.detachBoundar(context.index).isSame && context.doAminate();
@@ -138,14 +125,9 @@ step.prototype.doAminate = function (iswheel) {
     bgSlider(i);
     wheelRostate(i);
     chooseTitle(i);
-<<<<<<< HEAD
     aminate['inAimation' + i]();
     this.changeStyle();
     colorBg(i);
-=======
-    aminate['inAimation'+i]();
-
->>>>>>> 5b278f37031ff69113a398f6c580697c1063cecf
 }
 
 //aaa
@@ -196,12 +178,11 @@ function chooseTitle(index2) {
 
 }
 function colorBg(cur) {
-    var classColor = ['a1', 'a2', 'a2', 'a3', 'a2'],
-        classBox = ['box1', 'box2', 'box2', 'box3', 'box2'];
+    var classColor = ['a1', 'a2', 'a2', 'a3', 'a3'],
+        classBox = ['box1', 'box2', 'box3', 'box4', 'box5'];
     $(".logo").removeClass(classColor.join(' '));//转化字符串
-
+    $(".fr-box").removeClass(classBox.join(''));
     $(".logo").addClass(classColor[cur]);
-    $(".fr-box").removeClass(classBox.join(' '));
     $(".fr-box").addClass(classBox[cur]);
 
 }
