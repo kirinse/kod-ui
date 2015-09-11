@@ -178,11 +178,12 @@ function chooseTitle(index2) {
 
 }
 function colorBg(cur) {
-    var classColor = ['a1', 'a2', 'a2', 'a3', 'a3'],
-        classBox = ['box1', 'box2', 'box3', 'box4', 'box5'];
+    var classColor = ['a1', 'a2', 'a2', 'a3', 'a2'],
+        classBox = ['box1', 'box2', 'box2', 'box3', 'box2'];
     $(".logo").removeClass(classColor.join(' '));//转化字符串
-    $(".fr-box").removeClass(classBox.join(''));
+
     $(".logo").addClass(classColor[cur]);
+    $(".fr-box").removeClass(classBox.join(' '));
     $(".fr-box").addClass(classBox[cur]);
 
 }

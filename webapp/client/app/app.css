@@ -84,10 +84,10 @@ header {
 }
 .a1{
 
-    color: red;
+    color: #c1725b;
 }
-.a2{color: blue;}
-.a3{ color: yellow;}
+.a2{color: #7163b2;}
+.a3{ color:#40a3e4;}
 .logo h1 {
     margin: 0px;
     font-weight: normal;
@@ -151,9 +151,9 @@ header {
     font-size: 1em;
     display: inline;
 }
-.box1 ul li i,.box1 ul li a{  color: red;}
-.box2 ul li i,.box2 ul li a{  color: blue;}
-.box3 ul li i,.box3 ul li a{  color: yellow;}
+.box1 ul li i,.box1 ul li a{  color: #c1725b;}
+.box2 ul li i,.box2 ul li a{  color: #7163b2;}
+.box3 ul li i,.box3 ul li a{  color: #40a3e4;}
 /*底部圆*/
 .cir-container {
     position: absolute;
@@ -604,6 +604,7 @@ header {
     position: absolute;
    right: 30%;
     top:50%;
+    display: none;
 
 }
 
