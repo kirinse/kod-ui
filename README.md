@@ -3,7 +3,7 @@
 本项目主要用bower进行依赖管理.
 
 #时时浏览地址:
-**http://richardgong1987.github.io/frontend**
+**http://richardgong1987.github.io**
 
 ####.获取源码开发环境步骤:
 * 1. clone仓库代码
