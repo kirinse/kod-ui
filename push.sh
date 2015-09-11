@@ -4,7 +4,7 @@ git push origin  develop
 
 soucePath='webapp/client/*'
 showPath='../frontend.github.io'
-cp -fr ${soucePath} {$showPath};
+cp -fr ${soucePath} ${showPath};
 cd ${showPath};
 
 git add .
