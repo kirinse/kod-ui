@@ -25,7 +25,7 @@ step.prototype.bindEvent = function () {
 
 var aminate = {
     inAimation0: function () {
-        console.log(000000000000000000000000000000000000)
+        
     },
     inAimation1: function () {
         $(".wheel .list2").find('.list04,.list05').remove();

@@ -47,7 +47,7 @@ function flyBird() {
         bird.centerX = canvas.width / 2;
         bird.centerY = canvas.height / 2
            // 每只鸟儿的速度是不一样的
-        bird.speed =0.01
+        bird.speed =0.03;
         bird.angle = 0;
         //每只鸟儿开始位置也不一样。
         bird.RX = 350*Math.random();
