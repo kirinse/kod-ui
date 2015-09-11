@@ -9,7 +9,7 @@ cd $showPath;
 
 git add .
 git commit -m"submit"
-git push origin  develop
+git push origin  master
 
 
 
