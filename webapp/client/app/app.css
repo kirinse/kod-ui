@@ -392,11 +392,14 @@ header {
 
     background: #5c53ad;
 }
-
+.mytitles{
+  position: absolute;
+  width: 100%;
+  top: 10%;
+}
 /*标题*/
 .title {
     display: none;
-    margin-top: 53px;
     z-index: 3;
     position: relative;
     text-align: center;
@@ -411,7 +414,7 @@ header {
 }
 
 .title h2 {
-    font-size: 33px;
+    font-size: 53px;
 }
 
 .title .king2 {
@@ -849,7 +852,7 @@ header {
 .wheel .list4 .list01 {
     bottom: -71%;
     left: 25%;
-    
+
     transition: all 1.5s;
 
 }
